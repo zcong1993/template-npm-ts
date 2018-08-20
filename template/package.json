@@ -1,0 +1,46 @@
+{
+  "name": "<%= npmName %>",
+  "version": "0.0.0",
+  "description": "<%= description %>",
+  "main": "dist/index.js",
+  "files": [
+    "./dist/**.js",
+    "./dist/index.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run lint && npm run jest",
+    "test:cov": "npm run lint && npm run jest:cov",
+    "lint": "tslint -p .",
+    "jest": "jest --detectOpenHandles --forceExit",
+    "jest:cov": "jest --coverage --detectOpenHandles --forceExit",
+    "publish": "npm run build"
+  },
+  "typings": "./dist/index.d.ts",
+  "author": "<%= username %>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^10.5.2",
+    "tslint": "^5.8.0",
+    "tslint-config-airbnb": "^5.4.2",
+    "typescript": "^2.6.2",
+    "@types/jest": "^23.1.5",
+    "ts-jest": "^23.0.0",
+    "jest": "^23.4.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

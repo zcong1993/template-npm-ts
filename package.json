@@ -1,0 +1,22 @@
+{
+  "name": "template-koa-ts",
+  "version": "0.0.0",
+  "description": "soa template for koa typescript",
+  "repository": {
+    "url": "zcong1993/template-koa-ts",
+    "type": "git"
+  },
+  "author": "zcong1993 <1005997919@qq.com> (github.com/zcong1993)",
+  "license": "MIT",
+  "files": [
+    "sao.js",
+    "template"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "sao": "^0.22.1"
+  }
+}
