@@ -8,6 +8,11 @@ module.exports = {
         default: this.outFolder
       },
       {
+        name: 'npmName',
+        message: 'What is the npm name of the new project?',
+        default: this.outFolder
+      },
+      {
         name: 'description',
         message: 'How would you descripe the new project?',
         default: `my cool project`
