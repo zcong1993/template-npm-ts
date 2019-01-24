@@ -9,7 +9,7 @@
     "src"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "MIT",
     "test": "npm run lint && npm run jest",
     "test:cov": "npm run lint && npm run jest:cov",
     "lint": "tslint -p .",
