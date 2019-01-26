@@ -9,7 +9,7 @@
     "src"
   ],
   "scripts": {
-    "build": "MIT",
+    "build": "tsc",
     "test": "npm run lint && npm run jest",
     "test:cov": "npm run lint && npm run jest:cov",
     "lint": "tslint -p .",
@@ -20,7 +20,7 @@
   },
   "types": "./dist/index.d.ts",
   "author": "<%= username %>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^10.5.2",
     "tslint": "^5.8.0",
