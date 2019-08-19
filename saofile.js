@@ -45,6 +45,12 @@ module.exports = {
           return `https://github.com/${answers.username}`
         },
         store: true
+      },
+      {
+        name: 'githubActions',
+        message: 'Use github actions as ci?',
+        type: 'confirm',
+        default: true
       }
     ]
   },
@@ -52,7 +58,11 @@ module.exports = {
     return [
       {
         type: 'add',
-        files: '**'
+        files: '**',
+        filters: {
+          '.github': 'githubActions',
+          'circle.yml': '!githubActions'
+        }
       },
       {
         type: 'move',
