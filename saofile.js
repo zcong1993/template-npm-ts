@@ -14,7 +14,7 @@ module.exports = {
       {
         name: 'npmName',
         message: 'What is the npm name of the new project?',
-        default: this.npmGroup ? `@${this.npmGroup}/${this.outFolder}` : this.outFolder
+        default: this.answers.npmGroup ? `@${this.answers.npmGroup}/${this.outFolder}` : this.outFolder
       },
       {
         name: 'description',
