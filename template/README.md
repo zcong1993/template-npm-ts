@@ -4,6 +4,14 @@
 
 > <%= description %>
 
+## Install
+
+```bash
+$ yarn add <%= npmName %>
+# or npm
+$ npm i <%= npmName %> --save
+```
+
 ## License
 
 MIT &copy; <%= username %>
