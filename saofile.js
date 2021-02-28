@@ -66,8 +66,7 @@ module.exports = {
         type: 'add',
         files: '**',
         filters: {
-          '.github/workflows/push.yml': 'githubActions',
-          '.circleci/config.yml': '!githubActions'
+          '.github/workflows/push.yml': 'githubActions'
         }
       },
       {
