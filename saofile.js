@@ -1,3 +1,6 @@
+const path = require('path')
+const fs = require('fs')
+
 module.exports = {
   description: 'Scaffolding out a empty ts project.',
   prompts() {
@@ -81,6 +84,7 @@ module.exports = {
     ]
   },
   async completed() {
+    fs.chmodSync(path.join(this.outDir, './.husky/pre-commit'), '755')
     await this.gitInit()
     this.showProjectTips()
   }
