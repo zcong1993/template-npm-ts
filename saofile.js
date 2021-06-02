@@ -59,7 +59,7 @@ module.exports = {
         name: 'githubActions',
         message: 'Use github actions as ci?',
         type: 'confirm',
-        default: false
+        default: true
       }
     ]
   },
